@@ -6,13 +6,9 @@ items = {'ключи': 0.3,
          'телефон': 0.5,
          'зажигалка': 0.1,
          }
-max_weight = 1
+max_weight = 1.0
 
-thing_list = list(items.keys())
-random.shuffle(thing_list)
-
-for thing in thing_list:
+for thing in list(items.keys()):
+    print(thing)
     if sum(backpack.values()) + items[thing] <= max_weight:
         backpack[thing] = items[thing]
-
-print(backpack)

@@ -81,7 +81,7 @@ student.add_grade('Математика', 4)
 student.add_test_score('Математика', 85)
 
 student.add_grade('История', 5)
-student.add_test_score('Истори', 92)
+student.add_test_score('История', 92)
 print(student)
 
 average_test_score = student.get_average_test_score('Математика')
